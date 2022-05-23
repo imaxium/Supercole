@@ -1,0 +1,15 @@
+﻿<Application x:Class="Supercole.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Supercole"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="colores\colores.xaml"/>
+                <ResourceDictionary Source="estilos\MainStyles.xaml"/>
+                <ResourceDictionary Source="estilos\estilosMenu.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

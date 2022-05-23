@@ -1,0 +1,35 @@
+﻿<Window x:Class="Supercole.ventanasRegistros.Clases"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Supercole.ventanasRegistros"
+        mc:Ignorable="d"
+        Title="Clases" Height="450" Width="600"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <StackPanel Margin="30">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBox Name="textBoxIdClase" Grid.Row="0" Margin="0,0,0,20" Width="300" Style="{DynamicResource TextBoxStyle}" Tag="Código" IsEnabled="False"/>
+            <TextBox Name="textBoxNombreClase" Grid.Row="1" Margin="0,0,0,20" Width="300" Style="{DynamicResource TextBoxStyle}" Tag="Nombre"/>
+
+            <StackPanel Margin="0,15,0,15" HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="2" Orientation="Horizontal">
+                <!--<Button Padding="0" Content="nuevo" Width="100" Margin="10,0,10,0" Style="{DynamicResource ButtonStyle}"/>-->
+                <Button Padding="0" Content="registrar" Width="100" Margin="10,0,10,0" Style="{DynamicResource ButtonStyle}" Click="registrarClase"/>
+                <Button Padding="0" Content="modificar" Width="100" Margin="10,0,10,0" Style="{DynamicResource ButtonStyle}" Click="modificarClase"/>
+                <Button Padding="0" Content="eliminar" Width="100" Margin="10,0,10,0" Style="{DynamicResource ButtonStyle}" Click="eliminarClase"/>
+            </StackPanel>
+            <DataGrid Name="DataGridClases" Grid.Row="3" Grid.ColumnSpan="2" MaxHeight="155" FontSize="18" Margin="0,20,0,0" IsReadOnly="True" MouseDoubleClick="seleccionarClase" Style="{DynamicResource DataGridStyle2}"/>
+        </Grid>
+    </StackPanel>
+</Window>
