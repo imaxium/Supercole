@@ -13,6 +13,7 @@ namespace Supercole.Clases
         int alumno_telefono;
         int alumno_matricula;
         string id_materia;
+        //esto es una prueba
         string id_clase;
 
         public Alumno(string id_alumno, string alumno_nombre, int alumno_telefono, int alumno_matricula, string id_materia, string id_clase)
